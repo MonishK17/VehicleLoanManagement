@@ -111,7 +111,7 @@ public class AdminController {
 		return adminService.viewAllRejectedLoanApplications();
 	}
 	
-	@GetMapping("/user/getemi/{p}/{n}/{r}")
+	@GetMapping("/admin/getemi/{p}/{n}/{r}")
 	public double emiCalculate(@PathVariable double p, @PathVariable int n, @PathVariable double r) {
 		return adminService.emiCalculate(p, n, r);
 	}
